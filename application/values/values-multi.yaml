@@ -1,6 +1,6 @@
 namespace: demo-gitops
 
-response: This is a 1.16.3 test
+response: Hola desde mi fork
 
 # Default values for hello.
 # This is a YAML-formatted file.

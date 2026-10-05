@@ -9,7 +9,7 @@ metadata:
 spec:
   project: default
   source:  
-    repoURL: https://github.com/bizcochillo/test-gitops.git
+    repoURL: https://github.com/rdiazgav/test-gitops.git
     targetRevision: main
     path: helm/hello
     source:

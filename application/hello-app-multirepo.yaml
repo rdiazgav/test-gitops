@@ -5,18 +5,17 @@ metadata:
   namespace: openshift-gitops
   annotations:
     argocd.argoproj.io/sync-options: Prune=false
-    argocd.argoproj.io/manifest-generate-paths: /helm/hello;/application/values
 spec:
   project: default
   sources:  
-  - repoURL: https://github.com/bizcochillo/test-gitops-helm.git
+  - repoURL: https://github.com/rdiazgav/test-gitops-helm.git
     targetRevision: main
     path: helm/hello    
     helm:
       valueFiles:
         - $values/application/values/values-multi.yaml
   - ref: values
-    repoURL: https://github.com/bizcochillo/test-gitops.git
+    repoURL: https://github.com/rdiazgav/test-gitops.git
     targetRevision: 'main'
   destination:
     server: https://kubernetes.default.svc

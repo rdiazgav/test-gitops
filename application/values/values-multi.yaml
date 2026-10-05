@@ -1,6 +1,6 @@
 namespace: demo-gitops
 
-response: Hola desde mi fork
+response: Segunda prueba sin autosync
 
 # Default values for hello.
 # This is a YAML-formatted file.
